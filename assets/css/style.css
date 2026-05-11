@@ -627,6 +627,17 @@ html[data-lang="en"] .lang-en { color: var(--accent); }
 .mono-award::before { content: none !important; }
 .mono-award sup { font-size: 8px; vertical-align: 4px; }
 
+.mono-wip { color: var(--accent-2) !important; letter-spacing: 0.05em; }
+.mono-wip::before {
+	content: "◐ ";
+	color: var(--accent-2) !important;
+	font-size: 9px;
+	animation: pulse 2.4s ease-in-out infinite;
+}
+.mini-wip { border-color: rgba(167, 139, 250, 0.25); }
+.mini-wip:hover { border-color: var(--accent-2); }
+.mini-wip:hover::before { background: var(--accent-2); opacity: 1; }
+
 .mini-award {
 	background: linear-gradient(180deg, var(--bg-elev) 0%, var(--bg-alt) 100%);
 	border-color: rgba(240, 168, 104, 0.25);
