@@ -1,424 +1,880 @@
-<!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ethereal by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="pt" data-lang="pt">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Paulo de Araújo Rosa — frontend &amp; designer</title>
+	<meta name="description" content="Paulo de Araújo Rosa — frontend developer, designer e criador de produtos em Moçambique. 14+ anos entre design, vídeo, 3D e desenvolvimento web/mobile." />
+	<meta name="theme-color" content="#0a0e14" />
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
 
-				<!-- Wrapper -->
-					<div id="wrapper">
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
-						<!-- Panel (Banner) -->
-							<section class="panel banner right">
-								<div class="content color0 span-3-75">
-									<h1 class="major">Paulo Rosa<br />
-									meu portfolio {{theme}}</h1>
-									<p>This is <strong>Ethereal</strong>, a free site template by AJ for <a href="https://html5up.net">HTML5 UP</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)</p>
-									<ul class="actions">
-										<li><a href="#first" class="button primary color1 circle icon fa-angle-right">Next</a></li>
-									</ul>
-								</div>
-								<div class="image filtered span-1-75" data-position="25% 25%">
-									<img src="images/pic01.jpg" alt="" />
-								</div>
-							</section>
+	<svg id="grelha" aria-hidden="true"></svg>
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
-								<div class="content span-7">
-									<h2 class="major">Sed etiam aenean</h2>
-									<p>Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.</p>
-								</div>
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-							</section>
+	<button id="lang-toggle" type="button" aria-label="Toggle language">
+		<span class="lang-pt">PT</span>
+		<span class="lang-sep">/</span>
+		<span class="lang-en">EN</span>
+	</button>
 
-						<!-- Panel -->
-							<section class="panel color1">
-								<div class="intro joined">
-									<h2 class="major">Amet lorem</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="inner">
-									<ul class="grid-icons three connected">
-										<li><span class="icon fa-diamond"><span class="label">Lorem</span></span></li>
-										<li><span class="icon fa-camera-retro"><span class="label">Ipsum</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Dolor</span></span></li>
-										<li><span class="icon fa-paper-plane"><span class="label">Sit</span></span></li>
-										<li><span class="icon fa-bar-chart"><span class="label">Amet</span></span></li>
-										<li><span class="icon fa-code"><span class="label">Nullam</span></span></li>
-									</ul>
-								</div>
-							</section>
+	<!-- ============ HERO ============ -->
+	<header class="hero" id="top">
+		<div class="hero-art">
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight large left">
-								<div class="content span-5">
-									<h2 class="major">Magna amet tempus</h2>
-									<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
-								</div>
-								<div class="image filtered tinted" data-position="top right">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-							</section>
+			<!-- Ornamental SVG behind everything -->
+			<svg class="hero-orn" viewBox="0 0 1200 700" aria-hidden="true">
+				<defs>
+					<linearGradient id="orn-grad" x1="0" y1="0" x2="1" y2="1">
+						<stop offset="0%" stop-color="#5fb3ff" stop-opacity="0.7" />
+						<stop offset="100%" stop-color="#a78bfa" stop-opacity="0.4" />
+					</linearGradient>
+				</defs>
 
-						<!-- Panel -->
-							<section class="panel">
-								<div class="intro color2">
-									<h2 class="major">Elit integer</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="gallery">
-									<div class="group span-3">
-										<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-									<div class="group span-4-5">
-										<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-								</div>
-							</section>
+				<!-- big asterisk -->
+				<g class="orn-asterisk" stroke="#f0a868" stroke-width="1.5" stroke-linecap="round" opacity="0.55">
+					<line x1="1100" y1="80" x2="1100" y2="140" />
+					<line x1="1070" y1="110" x2="1130" y2="110" />
+					<line x1="1078" y1="88" x2="1122" y2="132" />
+					<line x1="1122" y1="88" x2="1078" y2="132" />
+				</g>
 
-						<!-- Panel -->
-							<section class="panel color4-alt">
-								<div class="intro color4">
-									<h2 class="major">Contact</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="inner columns divided">
-									<div class="span-3-25">
-										<form method="post" action="#">
-											<div class="fields">
-												<div class="field half">
-													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
-												</div>
-												<div class="field half">
-													<label for="email">Email</label>
-													<input type="email" name="email" id="email" />
-												</div>
-												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button primary" /></li>
-											</ul>
-										</form>
-									</div>
-									<div class="span-1-5">
-										<ul class="contact-icons color1">
-											<li class="icon fa-twitter"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-facebook"><a href="#">facebook.com/untitled</a></li>
-											<li class="icon fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-instagram"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-medium"><a href="#">medium.com/untitled</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
+				<!-- hand-drawn loop -->
+				<path class="orn-loop" d="M60 240 C 200 140, 360 200, 520 260 S 720 360, 880 280"
+					  fill="none" stroke="url(#orn-grad)" stroke-width="1.6"
+					  stroke-linecap="round"
+					  stroke-dasharray="1400" stroke-dashoffset="1400">
+					<animate attributeName="stroke-dashoffset" from="1400" to="0"
+							 dur="3s" begin="0.4s" fill="freeze" />
+				</path>
 
-						<!-- Panel -->
-							<section class="panel color2-alt">
-								<div class="intro color2">
-									<h2 class="major">Elements</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam. </p>
-								</div>
-								<div class="inner columns aligned">
-									<div class="span-2-75">
+				<!-- small marks -->
+				<g stroke="#5d6878" stroke-width="1" fill="none" opacity="0.6">
+					<circle cx="40" cy="120" r="3" />
+					<line x1="30" y1="500" x2="48" y2="500" />
+					<line x1="39" y1="491" x2="39" y2="509" />
+				</g>
+			</svg>
 
-										<h3 class="major">Text</h3>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-
-										<h1>Heading Level 1</h1>
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-
-									</div>
-									<div class="span-3">
-
-										<h4>Blockquote</h4>
-										<blockquote>Lorem ipsum dolor sit amet. Felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in vestibulum. Blandit adipiscing eu iaculis volutpat ac adipiscing volutpat ac adipiscing faucibus.</blockquote>
-
-										<h4>Preformatted</h4>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + (i++);
-    deck.shuffle();
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-
-									</div>
-									<div class="span-1-25">
-
-										<h3 class="major">Lists</h3>
-
-										<h4>Unordered</h4>
-										<ul>
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-										</ul>
-
-										<h4>Alternate</h4>
-										<ul class="alt">
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-											<li>Felis enim feugiat.</li>
-										</ul>
-
-									</div>
-									<div class="span-1-5">
-
-										<h4>Ordered</h4>
-										<ol>
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-											<li>Felis enim feugiat.</li>
-											<li>Etiam vel felis lorem.</li>
-										</ol>
-
-										<h4>Actions</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary color2">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-
-									</div>
-									<div class="span-1-25">
-
-										<h4>Icons</h4>
-										<ul class="icons">
-											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-											<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
-										</ul>
-
-										<h4>Contact Icons</h4>
-										<ul class="contact-icons color2">
-											<li class="icon fa-twitter"><a href="#">Twitter</a></li>
-											<li class="icon fa-facebook"><a href="#">Facebook</a></li>
-											<li class="icon fa-instagram"><a href="#">Instagram</a></li>
-											<li class="icon fa-github"><a href="#">GitHub</a></li>
-											<li class="icon fa-medium"><a href="#">Medium</a></li>
-										</ul>
-
-									</div>
-									<div class="span-3">
-										<h3 class="major">Table</h3>
-										<h4>Default</h4>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</div>
-									<div class="span-3">
-										<h4>Alternate</h4>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</div>
-									<div class="span-2-25">
-										<h3 class="major">Buttons</h3>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button large">Large</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2 icon fa-cog">Icon</a></li>
-											<li><a href="#" class="button icon fa-diamond">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary color2 disabled">Disabled</span></li>
-											<li><span class="button disabled">Disabled</span></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2 circle icon fa-cog">Icon</a></li>
-											<li><a href="#" class="button circle icon fa-diamond">Icon</a></li>
-										</ul>
-									</div>
-									<div class="span-4-5">
-										<h3 class="major">Form</h3>
-										<form method="post" action="#">
-											<div class="fields">
-												<div class="field third">
-													<label for="demo-name">Name</label>
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-												</div>
-												<div class="field third">
-													<label for="demo-email">Email</label>
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-												</div>
-												<div class="field third">
-													<label for="demo-category">Category</label>
-													<div class="select-wrapper">
-														<select name="demo-category" id="demo-category">
-															<option value="">-</option>
-															<option value="1">Manufacturing</option>
-															<option value="1">Shipping</option>
-															<option value="1">Administration</option>
-															<option value="1">Human Resources</option>
-														</select>
-													</div>
-												</div>
-												<div class="field quarter">
-													<input type="radio" id="demo-priority-low" name="demo-priority" class="color2" checked />
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="field quarter">
-													<input type="radio" id="demo-priority-high" name="demo-priority" class="color2" />
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="field quarter">
-													<input type="checkbox" id="demo-copy" name="demo-copy" class="color2" />
-													<label for="demo-copy">Email a copy</label>
-												</div>
-												<div class="field quarter">
-													<input type="checkbox" id="demo-human" name="demo-human" class="color2" checked />
-													<label for="demo-human">Not a robot</label>
-												</div>
-												<div class="field">
-													<label for="demo-message">Message</label>
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary color2" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</form>
-									</div>
-								</div>
-							</section>
-
-						<!-- Copyright -->
-							<div class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
-
+			<!-- Compact portrait, top-right, expressive -->
+			<aside class="portrait-art" aria-hidden="true">
+				<svg class="portrait-ring" viewBox="0 0 200 200">
+					<defs>
+						<linearGradient id="ring-grad" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0%" stop-color="#5fb3ff" />
+							<stop offset="50%" stop-color="#a78bfa" />
+							<stop offset="100%" stop-color="#f0a868" />
+						</linearGradient>
+					</defs>
+					<circle cx="100" cy="100" r="96" fill="none"
+							stroke="url(#ring-grad)" stroke-width="1.5"
+							stroke-dasharray="6 4" />
+					<circle cx="100" cy="100" r="86" fill="none"
+							stroke="#1f2733" stroke-width="0.5" />
+				</svg>
+				<div class="portrait-disc">
+					<img src="images/paulo.jpg" alt="" onerror="this.parentElement.classList.add('no-img')" />
+					<div class="portrait-placeholder mono">
+						<span class="ph-line">paulo.jpg</span>
+						<span class="ph-line ph-hint" data-i18n="ph-hint">copia a tua foto para aqui</span>
 					</div>
+				</div>
+				<span class="portrait-label mono">
+					<span class="caption-num">№ 01</span>
+					<span data-i18n="caption">retrato · self</span>
+				</span>
+			</aside>
 
+			<div class="hero-text">
+				<p class="kicker mono">
+					<span class="prompt">~/paulo $</span>
+					<span data-i18n="kicker">disponível para colaborações</span>
+					<span class="caret">_</span>
+				</p>
+
+				<h1 class="name">
+					<span class="name-line">Paulo</span>
+					<span class="name-line name-italic">de Araújo</span>
+					<span class="name-line">Rosa</span>
+				</h1>
+
+				<div class="role-art-block">
+					<span class="role-art" data-i18n="role-art">artista</span>
+					<svg class="role-divider" viewBox="0 0 60 30" aria-hidden="true">
+						<path d="M2 15 C 15 5, 25 25, 40 15 S 58 5, 58 15"
+							  fill="none" stroke="currentColor" stroke-width="1.5"
+							  stroke-linecap="round" />
+					</svg>
+					<span class="role-eng mono" data-i18n="role-eng">software engineer</span>
+				</div>
+
+				<p class="role-meta mono">
+					<span data-i18n="loc">Maputo / Beira, Moçambique</span>
+					<span class="sep">·</span>
+					<span class="mono">14+ <span data-i18n="years">anos</span></span>
+				</p>
+
+				<p class="bio">
+					<span data-i18n="bio">
+						14+ anos entre <em>design gráfico</em>, vídeo, modelação 3D e desenvolvimento.
+						Construo produtos com impacto local — apps de cidadania, saúde, educação
+						e ferramentas próprias como o <a href="#kaia">Kaia</a>
+						para cidades procedurais.
+					</span>
+				</p>
+
+				<nav class="hero-nav mono">
+					<a href="#kaia" class="nav-kaia" data-i18n="nav-kaia">Kaia</a>
+					<a href="#work" data-i18n="nav-work">trabalho</a>
+					<a href="#open-source" data-i18n="nav-os">open source</a>
+					<a href="#experience" data-i18n="nav-exp">percurso</a>
+					<a href="#stack" data-i18n="nav-stack">stack</a>
+					<a href="#contacto" data-i18n="nav-contact">contacto</a>
+				</nav>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
+		</div>
+	</header>
 
-	</body>
+	<!-- ============ KAIA — personal project ============ -->
+	<section class="kaia-section" id="kaia" aria-labelledby="kaia-title">
+		<div class="kaia-bg" aria-hidden="true">
+			<svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+				<defs>
+					<linearGradient id="kaia-grad" x1="0" y1="0" x2="1" y2="0">
+						<stop offset="0%"   stop-color="#5fb3ff" />
+						<stop offset="100%" stop-color="#a78bfa" />
+					</linearGradient>
+				</defs>
+				<!-- city footprint blocks (procedural-looking) -->
+				<g stroke="url(#kaia-grad)" stroke-width="1" fill="none" opacity="0.18">
+					<rect x="900" y="80"  width="40" height="40" />
+					<rect x="950" y="80"  width="60" height="40" />
+					<rect x="900" y="130" width="110" height="30" />
+					<rect x="1020" y="80" width="50" height="80" />
+					<rect x="900" y="170" width="30" height="50" />
+					<rect x="940" y="170" width="40" height="50" />
+					<rect x="990" y="170" width="80" height="50" />
+					<!-- DNA double-helix to the left -->
+					<path d="M120 60 Q 160 120 120 180 Q 80 240 120 300 Q 160 360 120 420" />
+					<path d="M170 60 Q 130 120 170 180 Q 210 240 170 300 Q 130 360 170 420" />
+					<line x1="120" y1="90"  x2="170" y2="90" />
+					<line x1="170" y1="150" x2="120" y2="150" />
+					<line x1="120" y1="210" x2="170" y2="210" />
+					<line x1="170" y1="270" x2="120" y2="270" />
+					<line x1="120" y1="330" x2="170" y2="330" />
+					<line x1="170" y1="390" x2="120" y2="390" />
+				</g>
+			</svg>
+		</div>
+
+		<div class="kaia-intro">
+			<p class="kaia-meta mono">
+				<span class="section-num">01</span>
+				<span class="kaia-meta-sep">·</span>
+				<span data-i18n="kaia-tag">projecto pessoal</span>
+				<span class="kaia-meta-sep">·</span>
+				<span class="kaia-pulse">●</span>
+				<span data-i18n="kaia-status">em desenvolvimento</span>
+			</p>
+
+			<h2 class="kaia-title" id="kaia-title">
+				<span class="kaia-name">Kaia</span>
+				<span class="kaia-sub" data-i18n="kaia-sub">cidades procedurais</span>
+			</h2>
+
+			<p class="kaia-tagline">
+				<span data-i18n="kaia-tagline">
+					O <em>único</em> produto que desenho de raiz e ao meu próprio ritmo.
+					Toolkit desktop composto por <strong>duas ferramentas</strong> que conversam entre si.
+				</span>
+			</p>
+
+			<div class="kaia-actions">
+				<a href="https://paullorosa.github.io/kaia/" target="_blank" rel="noopener" class="btn-primary mono">
+					<span data-i18n="kaia-visit">visitar página</span>
+					<span class="arrow">→</span>
+				</a>
+				<a href="https://github.com/paullorosa/kaia" target="_blank" rel="noopener" class="btn-ghost mono">
+					github ↗
+				</a>
+			</div>
+		</div>
+
+		<div class="kaia-pair">
+
+			<article class="kaia-tool" data-tool="grelha">
+				<svg class="kt-illust" viewBox="0 0 200 80" aria-hidden="true">
+					<g stroke="currentColor" stroke-width="0.6" fill="none" opacity="0.6">
+						<!-- isometric grid lots -->
+						<path d="M20 50 L60 30 L100 50 L60 70 Z" />
+						<path d="M100 50 L140 30 L180 50 L140 70 Z" />
+						<path d="M60 30 L100 10 L140 30" />
+						<line x1="60" y1="30" x2="60" y2="70" />
+						<line x1="100" y1="10" x2="100" y2="50" />
+						<line x1="140" y1="30" x2="140" y2="70" />
+					</g>
+					<g fill="currentColor" opacity="0.25">
+						<rect x="42" y="32" width="16" height="14" />
+						<rect x="82" y="40" width="14" height="8" />
+						<rect x="122" y="34" width="16" height="12" />
+					</g>
+				</svg>
+				<header class="kt-head">
+					<span class="kt-num mono">01 / 02</span>
+					<span class="kt-pill mono" data-i18n="kt-grelha-pill">layout · 2D → 3D</span>
+				</header>
+				<h3 class="kt-name">
+					<span class="kt-prefix">Caia</span><span class="kt-suffix">Grelha</span>
+				</h3>
+				<p class="kt-desc">
+					<span data-i18n="kt-grelha-desc">
+						Gera o tecido urbano. Pinta-se a grelha em 2D — lotes, ruas, blocos —
+						e o motor reconstrói a cidade em 3D.
+					</span>
+				</p>
+				<ul class="kt-bits mono">
+					<li data-i18n="kt-grelha-b1">grelha procedural</li>
+					<li data-i18n="kt-grelha-b2">lote → bloco → bairro</li>
+					<li data-i18n="kt-grelha-b3">export 3D</li>
+				</ul>
+			</article>
+
+			<article class="kaia-tool" data-tool="dna">
+				<svg class="kt-illust" viewBox="0 0 200 80" aria-hidden="true">
+					<g stroke="currentColor" stroke-width="0.7" fill="none" opacity="0.55">
+						<path d="M30 10 Q 60 40 30 70" />
+						<path d="M70 10 Q 40 40 70 70" />
+						<path d="M100 10 Q 130 40 100 70" />
+						<path d="M140 10 Q 110 40 140 70" />
+						<path d="M170 10 Q 200 40 170 70" />
+					</g>
+					<g stroke="currentColor" stroke-width="0.6" opacity="0.7">
+						<line x1="32" y1="20" x2="68" y2="20" />
+						<line x1="32" y1="35" x2="68" y2="35" />
+						<line x1="32" y1="50" x2="68" y2="50" />
+						<line x1="32" y1="65" x2="68" y2="65" />
+						<line x1="102" y1="22" x2="138" y2="22" />
+						<line x1="102" y1="38" x2="138" y2="38" />
+						<line x1="102" y1="54" x2="138" y2="54" />
+					</g>
+				</svg>
+				<header class="kt-head">
+					<span class="kt-num mono">02 / 02</span>
+					<span class="kt-pill mono" data-i18n="kt-dna-pill">rules · identity</span>
+				</header>
+				<h3 class="kt-name">
+					<span class="kt-prefix">Caia</span><span class="kt-suffix">DNA</span>
+				</h3>
+				<p class="kt-desc">
+					<span data-i18n="kt-dna-desc">
+						Define o "DNA" de cada bairro: alturas, materiais, densidade, ritmo.
+						Regras simples; resultado complexo e único.
+					</span>
+				</p>
+				<ul class="kt-bits mono">
+					<li data-i18n="kt-dna-b1">regras → estilo</li>
+					<li data-i18n="kt-dna-b2">materiais &amp; alturas</li>
+					<li data-i18n="kt-dna-b3">variação controlada</li>
+				</ul>
+			</article>
+
+		</div>
+	</section>
+
+	<!-- ============ STRIP: pitch (esq) + métricas (dir) ============ -->
+	<section class="strip" aria-label="resumo">
+		<div class="strip-grid">
+			<blockquote class="strip-pitch">
+				<span class="strip-quote" aria-hidden="true">“</span>
+				<span data-i18n="pitch">
+					14+ anos a desenhar e construir produtos digitais em Moçambique.
+					Do <em>storyboard 3D</em> à <em>linha de código</em>, do gov ao social.
+					Foco em coisas que <strong>funcionam offline</strong> e fazem <strong>diferença local</strong>.
+				</span>
+			</blockquote>
+
+			<ul class="metrics">
+				<li>
+					<span class="m-num">14<sup>+</sup></span>
+					<span class="m-lbl mono" data-i18n="m-years">anos de carreira</span>
+				</li>
+				<li>
+					<span class="m-num">15<sup>+</sup></span>
+					<span class="m-lbl mono" data-i18n="m-products">produtos digitais</span>
+				</li>
+				<li>
+					<span class="m-num">05</span>
+					<span class="m-lbl mono" data-i18n="m-sectors">sectores · gov · saúde · social · agro · comércio</span>
+				</li>
+				<li class="m-multi">
+					<span class="m-num m-mini"><em>design</em> · dev · 3D</span>
+					<span class="m-lbl mono" data-i18n="m-stack">pt · en · design · dev · 3D · vídeo</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- ============ PRODUTOS POR SECTOR ============ -->
+	<section class="sectors-section" id="work">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">02</span>
+				<span data-i18n="work-title">produtos por sector</span>
+			</h2>
+			<p class="section-sub" data-i18n="work-sub">
+				Apps e produtos onde fui responsável pelo frontend, design ou ambos.
+				Agrupados pelo público que servem.
+			</p>
+		</div>
+
+		<!-- GovTech -->
+		<div class="sector-block" data-sector="govtech">
+			<header class="sector-head">
+				<svg class="sector-glyph" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M3 21 L21 21 M5 21 L5 10 M9 21 L9 10 M15 21 L15 10 M19 21 L19 10 M3 10 L21 10 L12 3 Z"
+						  fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<h3 class="sector-name">GovTech</h3>
+				<span class="sector-meta mono" data-i18n="sec-gov">cidadania · leis · serviços públicos</span>
+			</header>
+			<ul class="mini-grid">
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Juris</h4>
+					<p class="mini-desc" data-i18n="m-juris">App de cidadania. Leis moçambicanas simplificadas, em texto + áudio. 20.000+ utilizadores.</p>
+					<a class="mini-link mono" href="https://juris.co.mz/" target="_blank" rel="noopener">juris.co.mz ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Município do Dondo</h4>
+					<p class="mini-desc" data-i18n="m-dondo">Portal oficial do município. Serviços, anúncios, transparência.</p>
+					<a class="mini-link mono" href="https://www.municipiododondo.gov.mz/" target="_blank" rel="noopener">municipiododondo.gov.mz ↗</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- HealthTech -->
+		<div class="sector-block" data-sector="health">
+			<header class="sector-head">
+				<svg class="sector-glyph" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M12 4 L12 20 M4 12 L20 12"
+						  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+				</svg>
+				<h3 class="sector-name">HealthTech</h3>
+				<span class="sector-meta mono" data-i18n="sec-health">saúde pública · emergências · prevenção</span>
+			</header>
+			<ul class="mini-grid">
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Consultare</h4>
+					<p class="mini-desc" data-i18n="m-consultare">Primeiros socorros offline. Desenvolvido com médicos MZ. Aprovação MISAU.</p>
+					<a class="mini-link mono" href="https://consultare.app/" target="_blank" rel="noopener">consultare.app ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">DoaMOZ</h4>
+					<p class="mini-desc" data-i18n="m-doamoz">Plataforma de doações na área da saúde em Moçambique.</p>
+					<span class="mini-link mono mini-muted" data-i18n="ml-no-public">sem link público</span>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">SEMMO</h4>
+					<p class="mini-desc" data-i18n="m-semmo">Sistema de Emergência Médica de Moçambique. Resposta rápida no terreno.</p>
+					<span class="mini-link mono mini-muted" data-i18n="ml-no-public">sem link público</span>
+				</li>
+			</ul>
+		</div>
+
+		<!-- SocialTech & Comunidade -->
+		<div class="sector-block" data-sector="social">
+			<header class="sector-head">
+				<svg class="sector-glyph" viewBox="0 0 24 24" aria-hidden="true">
+					<circle cx="8" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.4" />
+					<circle cx="16" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.4" />
+					<path d="M3 20 C 5 16, 11 16, 12 20 C 13 16, 19 16, 21 20"
+						  fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+				</svg>
+				<h3 class="sector-name">SocialTech &amp; Comunidade</h3>
+				<span class="sector-meta mono" data-i18n="sec-social">cultura · educação · fé · línguas</span>
+			</header>
+			<ul class="mini-grid">
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Fonte da Vida</h4>
+					<p class="mini-desc" data-i18n="m-fonte">Bíblia áudio sincronizada em 30+ línguas africanas. Offline-first.</p>
+					<a class="mini-link mono" href="https://fontedavida.org/" target="_blank" rel="noopener">fontedavida.org ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Kukura</h4>
+					<p class="mini-desc" data-i18n="m-kukura">App de impacto social — apoio comunitário e empreendedorismo local.</p>
+					<span class="mini-link mono mini-muted" data-i18n="ml-mobile">mobile</span>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Assembleia de Deus RJ</h4>
+					<p class="mini-desc" data-i18n="m-adrj">App da congregação — agenda, conteúdo e comunidade. Rio de Janeiro, Brasil.</p>
+					<span class="mini-link mono mini-muted" data-i18n="ml-mobile">mobile</span>
+				</li>
+				<li class="mini-card mini-award" data-award="cyanga">
+					<span class="mini-status mono mono-award">★ 1<sup>º</sup></span>
+					<h4 class="mini-name">C-YANGA</h4>
+					<p class="mini-desc" data-i18n="m-cyanga">App de impacto social em Moçambique. 1º lugar Indigitous Beira 2020 — Melhor Tecnologia &amp; Inovação.</p>
+					<span class="mini-link mono mini-muted" data-i18n="ml-no-public">sem link público</span>
+				</li>
+			</ul>
+		</div>
+
+		<!-- AgroTech, Comércio & Mobilidade -->
+		<div class="sector-block" data-sector="agro">
+			<header class="sector-head">
+				<svg class="sector-glyph" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M12 3 C 8 8, 8 13, 12 18 C 16 13, 16 8, 12 3 Z M12 18 L12 22"
+						  fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<h3 class="sector-name">AgroTech &middot; Comércio</h3>
+				<span class="sector-meta mono" data-i18n="sec-agro">cadeias produtivas · vendas · trânsito</span>
+			</header>
+			<ul class="mini-grid">
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">FAMS</h4>
+					<p class="mini-desc" data-i18n="m-fams">Farmers and Agent Management System. Núcleo de gestão para agronegócio em Manica e outras províncias. GIZ.</p>
+					<a class="mini-link mono" href="http://www.fams.co.mz/" target="_blank" rel="noopener">fams.co.mz ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Perpi</h4>
+					<p class="mini-desc" data-i18n="m-perpi">Sistema de compras online — frontend e checkout. Bezalel/MZ-Coders.</p>
+					<a class="mini-link mono" href="https://github.com/MZ-Coders/perpi_app" target="_blank" rel="noopener">github ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Abastece</h4>
+					<p class="mini-desc" data-i18n="m-abastece">App comunitária para condutores em MZ. Combustível em tempo real.</p>
+					<a class="mini-link mono" href="https://abastece.co.mz/" target="_blank" rel="noopener">abastece.co.mz ↗</a>
+				</li>
+				<li class="mini-card">
+					<span class="mini-status mono">live</span>
+					<h4 class="mini-name">Manna</h4>
+					<p class="mini-desc" data-i18n="m-manna">Software para hospitality &amp; turismo. Suite mobile/web.</p>
+					<a class="mini-link mono" href="https://github.com/MZ-Coders/manna_mobile" target="_blank" rel="noopener">github ↗</a>
+				</li>
+			</ul>
+		</div>
+
+		<details class="more-apps">
+			<summary class="mono"><span data-i18n="more-apps">+ outras apps que ajudei a construir</span></summary>
+			<ul class="pill-list mono">
+				<li>Aidai</li>
+				<li>Geenetech</li>
+				<li>Recall</li>
+				<li>NomeTerra <a href="ficheiros/NomeTerra.apk" download>(.apk ↓)</a></li>
+			</ul>
+		</details>
+	</section>
+
+	<!-- ============ WEB ============ -->
+	<section class="web-section" id="web">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">03</span>
+				<span data-i18n="web-title">web institucional &amp; freelance</span>
+			</h2>
+			<p class="section-sub" data-i18n="web-sub">
+				Sites para organizações, ONGs e clientes comerciais — frontend ou pacote completo.
+			</p>
+		</div>
+
+		<ul class="link-list">
+			<li>
+				<a href="https://equipmoz.org/" target="_blank" rel="noopener">
+					<span class="link-name">equipmoz.org</span>
+					<span class="link-desc mono" data-i18n="w-equip">organização · Beira, MZ</span>
+					<span class="link-arrow">↗</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://empoderandomocambique.org/" target="_blank" rel="noopener">
+					<span class="link-name">empoderandomocambique.org</span>
+					<span class="link-desc mono" data-i18n="w-empoder">ONG · empoderamento social</span>
+					<span class="link-arrow">↗</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://cohenwoodworking.com/" target="_blank" rel="noopener">
+					<span class="link-name">cohenwoodworking.com</span>
+					<span class="link-desc mono" data-i18n="w-cohen">marcenaria artesanal · EUA</span>
+					<span class="link-arrow">↗</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://caperbrasil.com.br/" target="_blank" rel="noopener">
+					<span class="link-name">caperbrasil.com.br</span>
+					<span class="link-desc mono" data-i18n="w-caper">programador · ES, Brasil</span>
+					<span class="link-arrow">↗</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.fams.co.mz/" target="_blank" rel="noopener">
+					<span class="link-name">fams.co.mz</span>
+					<span class="link-desc mono" data-i18n="w-fams">plataforma · Beira</span>
+					<span class="link-arrow">↗</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<!-- ============ OPEN SOURCE ============ -->
+	<section class="os-section" id="open-source">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">04</span>
+				<span data-i18n="os-title">open source</span>
+			</h2>
+			<p class="section-sub" data-i18n="os-sub">
+				Repos próprios e contribuições às organizações onde colaboro.
+			</p>
+		</div>
+
+		<div class="os-grid">
+
+			<div class="os-block">
+				<h3 class="os-head mono">
+					<span data-i18n="os-personal">pessoal</span>
+					<a href="https://github.com/paullorosa" target="_blank" rel="noopener">@paullorosa ↗</a>
+				</h3>
+				<ul class="link-list compact">
+					<li>
+						<a href="https://github.com/paullorosa/kaia" target="_blank" rel="noopener">
+							<span class="link-name">kaia</span>
+							<span class="link-desc mono">CSS · cidades procedurais</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/paullorosa/thermalprinter" target="_blank" rel="noopener">
+							<span class="link-name">thermalprinter</span>
+							<span class="link-desc mono">TypeScript · ESC/POS</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/paullorosa/testestripe" target="_blank" rel="noopener">
+							<span class="link-name">testestripe</span>
+							<span class="link-desc mono">Stripe · testes</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/paullorosa/hackbeira2020" target="_blank" rel="noopener">
+							<span class="link-name">hackbeira2020</span>
+							<span class="link-desc mono">hackathon · Beira</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="os-block">
+				<h3 class="os-head mono">
+					<span data-i18n="os-orgs">organizações</span>
+				</h3>
+				<ul class="link-list compact">
+					<li>
+						<a href="https://github.com/MZ-Coders" target="_blank" rel="noopener">
+							<span class="link-name">MZ-Coders / Bezalel</span>
+							<span class="link-desc mono" data-i18n="o-mz">~44 repos · Manna, Perpi, dev tools</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/Equip-Mozambique" target="_blank" rel="noopener">
+							<span class="link-name">Equip-Mozambique</span>
+							<span class="link-desc mono" data-i18n="o-equip">hackpoverty · empoderando · low-code</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/startmoz" target="_blank" rel="noopener">
+							<span class="link-name">Start Space (startmoz)</span>
+							<span class="link-desc mono" data-i18n="o-start">incubadora · spec-kit workshops</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/GenesiSoftLDA" target="_blank" rel="noopener">
+							<span class="link-name">GenesiSoft Lda</span>
+							<span class="link-desc mono" data-i18n="o-genesi">software house</span>
+							<span class="link-arrow">↗</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ============ EXPERIENCE ============ -->
+	<section class="exp-section" id="experience">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">05</span>
+				<span data-i18n="exp-title">percurso</span>
+			</h2>
+			<p class="section-sub" data-i18n="exp-sub">
+				Da edição de vídeo ao frontend, passando por design 3D. Cronologia condensada.
+			</p>
+		</div>
+
+		<ol class="timeline">
+			<li>
+				<span class="t-year mono">2022 — <span data-i18n="t-now">actual</span></span>
+				<span class="t-role" data-i18n="t-urban-role">Proprietário</span>
+				<span class="t-where mono">UrbanZone E.I · Beira</span>
+			</li>
+			<li>
+				<span class="t-year mono">2024 — 2025</span>
+				<span class="t-role" data-i18n="t-golden-role">Modelagem 3D + Python</span>
+				<span class="t-where mono">Golden Marketing · Brasil (remoto)</span>
+			</li>
+			<li>
+				<span class="t-year mono">2018 — 2025</span>
+				<span class="t-role" data-i18n="t-empoder-role">Programador frontend + designer</span>
+				<span class="t-where mono">Empoderando Moçambique · Beira</span>
+			</li>
+			<li>
+				<span class="t-year mono">2016 — 2018</span>
+				<span class="t-role" data-i18n="t-moza-role">Designer + ilustrador 3D</span>
+				<span class="t-where mono">Mozaprint · Beira</span>
+			</li>
+			<li>
+				<span class="t-year mono">2014</span>
+				<span class="t-role" data-i18n="t-nve-role">Editor de vídeo + camera man</span>
+				<span class="t-where mono">NVE · Maputo</span>
+			</li>
+			<li>
+				<span class="t-year mono">2013</span>
+				<span class="t-role" data-i18n="t-ms-role">Editor + camera man + designer</span>
+				<span class="t-where mono">MS Video · Beira</span>
+			</li>
+			<li>
+				<span class="t-year mono">2011 — 2012</span>
+				<span class="t-role" data-i18n="t-africa-role">Editor de vídeo + genéricos</span>
+				<span class="t-where mono">Africa Communications · Maputo</span>
+			</li>
+		</ol>
+	</section>
+
+	<!-- ============ STACK ============ -->
+	<section class="stack-section" id="stack">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">06</span>
+				<span data-i18n="stack-title">stack</span>
+			</h2>
+			<p class="section-sub" data-i18n="stack-sub">
+				Ferramentas com que trabalho no dia-a-dia. Curiosidade activa por IA, automação e gráficos procedurais.
+			</p>
+		</div>
+
+		<div class="stack-grid">
+
+			<div class="stack-col">
+				<h3 class="stack-head mono">
+					<span class="stack-dot" style="--c: var(--grelha)"></span>
+					<span data-i18n="s-dev">desenvolvimento</span>
+				</h3>
+				<ul class="pill-list mono">
+					<li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li>
+					<li>React Native</li><li>Ionic</li><li>WordPress</li><li>Joomla</li>
+					<li>Python</li><li>Git</li>
+				</ul>
+			</div>
+
+			<div class="stack-col">
+				<h3 class="stack-head mono">
+					<span class="stack-dot" style="--c: var(--dna)"></span>
+					<span data-i18n="s-design">design</span>
+				</h3>
+				<ul class="pill-list mono">
+					<li>Photoshop</li><li>Affinity Photo</li><li>Affinity Designer</li>
+					<li>Affinity Publisher</li><li>InDesign</li><li>Corel Draw</li>
+					<li>Figma</li>
+				</ul>
+			</div>
+
+			<div class="stack-col">
+				<h3 class="stack-head mono">
+					<span class="stack-dot" style="--c: var(--warm)"></span>
+					<span data-i18n="s-3d">3D &amp; motion</span>
+				</h3>
+				<ul class="pill-list mono">
+					<li>Blender</li><li>Cinema 4D</li><li>Unreal Engine</li>
+					<li>Cascadeur</li><li>MotionBuilder</li><li>Nvidia Omniverse</li>
+					<li>After Effects</li><li>Premiere</li><li>DaVinci Resolve</li>
+					<li>Final Cut</li>
+				</ul>
+			</div>
+
+			<div class="stack-col">
+				<h3 class="stack-head mono">
+					<span class="stack-dot" style="--c: var(--accent)"></span>
+					<span data-i18n="s-interest">interesses activos</span>
+				</h3>
+				<ul class="pill-list mono">
+					<li data-i18n="s-llm">LLMs &amp; IA aplicada</li>
+					<li data-i18n="s-auto">automação de tarefas</li>
+					<li data-i18n="s-proc">gráficos procedurais</li>
+					<li data-i18n="s-emb">sistemas embebidos</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ============ RECONHECIMENTOS & PARCEIROS ============ -->
+	<section class="recog-section" id="recog">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">07</span>
+				<span data-i18n="recog-title">reconhecimentos &amp; parceiros</span>
+			</h2>
+			<p class="section-sub" data-i18n="recog-sub">
+				Quem financiou, quem distinguiu, e quem ajudou a tornar os produtos possíveis.
+			</p>
+		</div>
+
+		<div class="recog-grid">
+
+			<div class="recog-col">
+				<h3 class="recog-head mono">
+					<span class="recog-dot" style="--c: var(--accent-warm)"></span>
+					<span data-i18n="recog-prizes">reconhecimentos</span>
+				</h3>
+				<ul class="recog-list">
+					<li class="r-highlight">
+						<span class="r-year mono">2020</span>
+						<span class="r-title">
+							<span class="r-trophy">★</span>
+							<span data-i18n="r-cyanga">1º lugar — C-YANGA · Melhor Tecnologia &amp; Inovação</span>
+						</span>
+						<span class="r-where mono">Indigitous · Beira</span>
+					</li>
+					<li>
+						<span class="r-year mono">2020</span>
+						<span class="r-title" data-i18n="r-hb">Hack Beira 2020 · participação</span>
+						<span class="r-where mono">Beira, MZ</span>
+					</li>
+					<li class="r-placeholder">
+						<span class="r-year mono">···</span>
+						<span class="r-title" data-i18n="r-more">acrescentar prémios &amp; menções</span>
+						<span class="r-where mono">diz-me para incluir</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="recog-col">
+				<h3 class="recog-head mono">
+					<span class="recog-dot" style="--c: var(--accent)"></span>
+					<span data-i18n="recog-funders">financiadores &amp; parceiros</span>
+				</h3>
+				<ul class="logos-grid mono">
+					<li>GIZ</li>
+					<li>Enabel</li>
+					<li>Mozilla IRL Fund</li>
+					<li>African Union Civic Tech Fund</li>
+					<li>Woord en Daad</li>
+					<li>AMAC</li>
+					<li>MISAU</li>
+					<li>Gab. Central Combate à Corrupção</li>
+					<li>Gab. Provincial de Sofala</li>
+					<li>Município do Dondo</li>
+					<li>Empoderando Moçambique</li>
+					<li>Bezalel / MZ-Coders</li>
+					<li>Start Space</li>
+					<li>Golden Marketing (BR)</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ============ CONTACT ============ -->
+	<section class="contact" id="contacto">
+		<div class="section-head">
+			<h2 class="section-title">
+				<span class="section-num mono">08</span>
+				<span data-i18n="contact-title">contacto</span>
+			</h2>
+			<p class="section-sub" data-i18n="contact-sub">
+				Para projectos, parcerias ou apenas uma conversa. Respondo em 2–3 dias úteis.
+			</p>
+		</div>
+
+		<div class="contact-grid">
+
+			<form class="contact-form" id="contact-form" novalidate>
+				<div class="field">
+					<label for="f-name" class="mono" data-i18n="f-name">nome</label>
+					<input type="text" id="f-name" name="name" required autocomplete="name" />
+				</div>
+				<div class="field">
+					<label for="f-email" class="mono" data-i18n="f-email">email</label>
+					<input type="email" id="f-email" name="email" required autocomplete="email" />
+				</div>
+				<div class="field">
+					<label for="f-message" class="mono" data-i18n="f-message">mensagem</label>
+					<textarea id="f-message" name="message" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="btn-primary mono">
+					<span data-i18n="f-send">enviar mensagem</span>
+					<span class="arrow">→</span>
+				</button>
+				<p class="form-note mono" data-i18n="f-note">
+					abre o teu cliente de email com a mensagem pronta.
+				</p>
+			</form>
+
+			<aside class="contact-side">
+				<dl class="kv mono">
+					<dt data-i18n="k-email">email</dt>
+					<dd><a href="mailto:rosa.paulo40@gmail.com">rosa.paulo40@gmail.com</a></dd>
+
+					<dt data-i18n="k-phone">telefone</dt>
+					<dd><a href="tel:+258821270961">+258 82 12 70 9613</a></dd>
+
+					<dt data-i18n="k-loc">localização</dt>
+					<dd data-i18n="k-loc-val">Maputo / Beira, MZ</dd>
+
+					<dt data-i18n="k-tz">fuso</dt>
+					<dd>UTC+2 (CAT)</dd>
+				</dl>
+
+				<ul class="social mono">
+					<li><a href="https://github.com/paullorosa" target="_blank" rel="noopener">github / @paullorosa</a></li>
+					<li><a href="https://www.linkedin.com/in/paullorosa/" target="_blank" rel="noopener">linkedin / paullorosa</a></li>
+					<li><a href="https://www.instagram.com/paullorosa_/" target="_blank" rel="noopener">instagram / @paullorosa_</a></li>
+					<li><a href="https://www.tiktok.com/@paullorosa_" target="_blank" rel="noopener">tiktok / @paullorosa_</a></li>
+					<li><a href="https://www.facebook.com/PauloAraujoRosa" target="_blank" rel="noopener">facebook / PauloAraujoRosa</a></li>
+				</ul>
+			</aside>
+
+		</div>
+	</section>
+
+	<footer class="footer mono">
+		<span>© <span id="year"></span> Paulo de Araújo Rosa</span>
+		<span class="sep">·</span>
+		<a href="#top" data-i18n="back-top">voltar ao topo ↑</a>
+	</footer>
+
+	<script src="assets/js/main.js" defer></script>
+</body>
 </html>

@@ -1,1 +1,8 @@
-theme: jekyll-theme-modernist
+title: "Paulo Rosa — software & systems"
+description: "Portfolio de Paulo Rosa. Ferramentas procedurais, sistemas embebidos, integrações."
+lang: pt
+include:
+  - ficheiros
+  - assets
+exclude:
+  - README.md
