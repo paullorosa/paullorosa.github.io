@@ -908,7 +908,7 @@ html[data-lang="en"] .lang-en { color: var(--accent); }
 	background: rgba(167, 139, 250, 0.06);
 }
 
-/* --- The pair: CaiaGrelha & CaiaDNA --- */
+/* --- The pair: KaiaMalha & KaiaDNA --- */
 
 .kaia-pair {
 	display: grid;
@@ -941,8 +941,8 @@ html[data-lang="en"] .lang-en { color: var(--accent); }
 	align-self: flex-start;
 	margin-bottom: -6px;
 }
-.kaia-tool[data-tool="grelha"] { --tc: var(--grelha); }
-.kaia-tool[data-tool="dna"]    { --tc: var(--dna); }
+.kaia-tool[data-tool="malha"] { --tc: var(--grelha); }
+.kaia-tool[data-tool="dna"]   { --tc: var(--dna); }
 
 .kaia-tool::before {
 	content: "";
